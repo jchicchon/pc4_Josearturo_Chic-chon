@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22ec2ead45c6bfa798abff361b9d1674 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22ec2ead45c6bfa798abff361b9d1674" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22ec2ead45c6bfa798abff361b9d1674 = L.map(
+                "map_22ec2ead45c6bfa798abff361b9d1674",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff6eeffaab6fd0eed738b7a283550f6e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ff6eeffaab6fd0eed738b7a283550f6e.addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var marker_0b8eaa7cd9690817be3253f6ece9176a = L.marker(
+                [20.6597, -103.3496],
+                {
+}
+            ).addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var icon_ea15ab6cac7cd5d8f29737818e1e9eee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88626a34391a1554cd4f5deb10a32f24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26885b800f263c249d16d1dee60afbc3 = $(`<div id="html_26885b800f263c249d16d1dee60afbc3" style="width: 100.0%; height: 100.0%;"><b>Pedro Páramo</b><br>Director: Carlos Velo<br>Año: 1967<br>País: México<br>Lugar: Jalisco, México<br>Guion: Carlos Fuentes y Manuel Barbachano Ponce</div>`)[0];
+                popup_88626a34391a1554cd4f5deb10a32f24.setContent(html_26885b800f263c249d16d1dee60afbc3);
+            
+        
+
+        marker_0b8eaa7cd9690817be3253f6ece9176a.bindPopup(popup_88626a34391a1554cd4f5deb10a32f24)
+        ;
+
+        
+    
+    
+            marker_0b8eaa7cd9690817be3253f6ece9176a.bindTooltip(
+                `<div>
+                     Pedro Páramo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b8eaa7cd9690817be3253f6ece9176a.setIcon(icon_ea15ab6cac7cd5d8f29737818e1e9eee);
+            
+    
+            var marker_e15e1b64ef10fc87febd4c9c47321afd = L.marker(
+                [52.366, -0.891],
+                {
+}
+            ).addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var icon_59cb9ef43af2208200b501339291fcba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5de6b4a0f2c40bd8fb702cdcc8d4b82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be74d1f343d408089653732a6fb06715 = $(`<div id="html_be74d1f343d408089653732a6fb06715" style="width: 100.0%; height: 100.0%;"><b>Saltburn</b><br>Director: Emerald Fennell<br>Año: 2023<br>País: Reino Unido<br>Lugar: Drayton House, Northamptonshire, Inglaterra<br>Guion: Emerald Fennell</div>`)[0];
+                popup_f5de6b4a0f2c40bd8fb702cdcc8d4b82.setContent(html_be74d1f343d408089653732a6fb06715);
+            
+        
+
+        marker_e15e1b64ef10fc87febd4c9c47321afd.bindPopup(popup_f5de6b4a0f2c40bd8fb702cdcc8d4b82)
+        ;
+
+        
+    
+    
+            marker_e15e1b64ef10fc87febd4c9c47321afd.bindTooltip(
+                `<div>
+                     Saltburn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e15e1b64ef10fc87febd4c9c47321afd.setIcon(icon_59cb9ef43af2208200b501339291fcba);
+            
+    
+            var marker_5147562cdf1bf2e2a14cdd63a0bf82ea = L.marker(
+                [35.6892, 51.389],
+                {
+}
+            ).addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var icon_5a6d599585233c0e754bb51e10434192 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf180a8226e01a14237ce0b103ef421a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_544213d0272f30a418ec4d525781468c = $(`<div id="html_544213d0272f30a418ec4d525781468c" style="width: 100.0%; height: 100.0%;"><b>Niños del cielo</b><br>Director: Majid Majidi<br>Año: 1997<br>País: Irán<br>Lugar: Teherán, Irán<br>Guion: Majid Majidi</div>`)[0];
+                popup_bf180a8226e01a14237ce0b103ef421a.setContent(html_544213d0272f30a418ec4d525781468c);
+            
+        
+
+        marker_5147562cdf1bf2e2a14cdd63a0bf82ea.bindPopup(popup_bf180a8226e01a14237ce0b103ef421a)
+        ;
+
+        
+    
+    
+            marker_5147562cdf1bf2e2a14cdd63a0bf82ea.bindTooltip(
+                `<div>
+                     Niños del cielo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5147562cdf1bf2e2a14cdd63a0bf82ea.setIcon(icon_5a6d599585233c0e754bb51e10434192);
+            
+    
+            var marker_6724cd85d3564df6ece63ac775b4d2ee = L.marker(
+                [-12.0464, -77.0428],
+                {
+}
+            ).addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var icon_312ea81e42bd486f09ed3f8af565d4c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_078b4e40220e5c8b142a9f550d79a9f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1568f8ea537ef0c230c2e21a184c06cf = $(`<div id="html_1568f8ea537ef0c230c2e21a184c06cf" style="width: 100.0%; height: 100.0%;"><b>Tinta Roja</b><br>Director: Francisco J. Lombardi<br>Año: 2000<br>País: Perú<br>Lugar: Lima, Perú<br>Guion: Giovanna Pollarolo y Francisco J. Lombardi</div>`)[0];
+                popup_078b4e40220e5c8b142a9f550d79a9f3.setContent(html_1568f8ea537ef0c230c2e21a184c06cf);
+            
+        
+
+        marker_6724cd85d3564df6ece63ac775b4d2ee.bindPopup(popup_078b4e40220e5c8b142a9f550d79a9f3)
+        ;
+
+        
+    
+    
+            marker_6724cd85d3564df6ece63ac775b4d2ee.bindTooltip(
+                `<div>
+                     Tinta Roja
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6724cd85d3564df6ece63ac775b4d2ee.setIcon(icon_312ea81e42bd486f09ed3f8af565d4c4);
+            
+    
+            var marker_5b4a68f687e1d5107a683ae8f9eea311 = L.marker(
+                [29.9511, -90.0715],
+                {
+}
+            ).addTo(map_22ec2ead45c6bfa798abff361b9d1674);
+        
+    
+            var icon_48adb8af3c2beec226ecc13e748ff1aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb1055dbf998b74193091374315804c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51c2580a81bb709064a49a173a057d58 = $(`<div id="html_51c2580a81bb709064a49a173a057d58" style="width: 100.0%; height: 100.0%;"><b>El curioso caso de Benjamin Button</b><br>Director: David Fincher<br>Año: 2008<br>País: Estados Unidos<br>Lugar: Nueva Orleans, Luisiana, EE. UU.<br>Guion: Eric Roth y Robin Swicord</div>`)[0];
+                popup_cb1055dbf998b74193091374315804c3.setContent(html_51c2580a81bb709064a49a173a057d58);
+            
+        
+
+        marker_5b4a68f687e1d5107a683ae8f9eea311.bindPopup(popup_cb1055dbf998b74193091374315804c3)
+        ;
+
+        
+    
+    
+            marker_5b4a68f687e1d5107a683ae8f9eea311.bindTooltip(
+                `<div>
+                     El curioso caso de Benjamin Button
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b4a68f687e1d5107a683ae8f9eea311.setIcon(icon_48adb8af3c2beec226ecc13e748ff1aa);
+            
+</script>
+</html>
