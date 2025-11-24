@@ -83,14 +83,7 @@ if pagina_seleccionada == 'Inicio':
     # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
-    Puedes agregar un carrusel de imágenes o fotos relacionadas con tus intereses o pasatiempos.
+    Me llamo Josearturo Chic chon, nací en el Callao, pero vivo en Lince. Estudio la carrera de periodismo, me encuentro en 6to ciclo, me encanta la fotografía, me gustaría dedicarme al fotoperiodismo y tener un programa de entrevistas. Uno de mis pasatiempos favoritos es salir a caminar y ver películas o series 
     """
 
     # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
@@ -119,11 +112,7 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro? 
+    Al comienzo, me sentía perdido con el programa, pero poco a poco con la ayuda de Luisa, fui aprendiendo a programar. Este programa me enseñó a crear gráficos, mapas y a crear una pagina web. Los gráficos se hacen de manera más sencilla y más visuales y siento que el saber crear una página web es muy útil como periodista, porque nos serviría para crear un portafolio. Sin duda lo que más me encnataria seria crear un portafolio y anexar todos mis trabajos durante la vida universitaria.
     """
 
     # Mostramos el texto
@@ -139,7 +128,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # En este caso, {texto_2} se reemplaza por el valor de la variable texto.
 
     # Agregamos un subtítulo para el video
-    st.markdown("<h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>A continuación mi video</h2>", unsafe_allow_html=True)
     
     # <h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>: Esta es una cadena de código HTML.
     # La etiqueta <h2> se utiliza para un encabezado de segundo nivel en una página web.
@@ -152,15 +141,15 @@ elif  pagina_seleccionada == 'Experiencia':
     # Por ejemplo, puedes agregar un emoji de video 🎥 
 
     # Agregamos un video realizado en las practicas anteriores
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-    
+    st.video("https://youtu.be/p6ZtoYpC5ds?si=Xd1MZBAveAVjksWF")
+    st.video("https://youtu.be/LCNNpkBU0Eg?si=JfKNavjoo-Q9SEfU")
     # st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E"): Esta línea está mostrando un video en la aplicación web.
     # La función video toma como primer argumento la URL del video que se desea mostrar.
     # En este caso, la URL es "https://www.youtube.com/watch?v=X_Z7d04x9-E".
     # Puedes cambiar la URL por la de tu video en YouTube o en otra plataforma de video.
 
     # O creamos un botón para ir al enlace del video con button
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+   # st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
 
     # <div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>:
     # Esta es una cadena de código HTML.
@@ -183,7 +172,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de barras verticales de lenguas aisladas', 'Gráfico de barras de familias lingüísticas', 'Gráfico de barras horizontales de familias lingüísticas', 'mapa cusco']
+    graficos = ['Gráfico de barras verticales de partidos del Betis ', 'Gráfico de torta de los partidos de local  del Betis', 'Histograma de los goles de visita del Betis', 'mapa películas favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -197,23 +186,23 @@ else:
     
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico de barras verticales de lenguas aisladas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("aisladas_base_datos.png", caption='Gráfico de lenguas aisladas', width=500)
+    if grafico_seleccionado == 'Gráfico de barras verticales de partidos del Betis':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'> Análisis de los partidos de futbol del Betis en la Liga Española. Estos partidos muestran las doferencias del Betis jugando de local como visitante. Se muestra una diferencia en los partidos de local, ya que tiene más victorias. gráfico</div>", unsafe_allow_html=True)
+        st.image("grafico1.png", caption='Gráfico de los partidos de local y visitante del Betis', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras de familias lingüísticas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Gráfico de torta de los partidos de local  del Betis':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'> Se muestra un gráfico de torta sobre los partidos de local del Betis en la Liga Española. En este tipo de gráficos se puede apreciar los porcentajes de las victorias, empates y derrotas. Este gráfico ayuda a una mayor interacción y comprensión de los partidos jugados como local del Betis. gráfico</div>", unsafe_allow_html=True)
+        st.image("imagen2.png", caption='Gráfico de torta de los partidos de local del Betis',width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras horizontales de familias lingüísticas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Histograma de los goles anotados del Betis como visitante':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El histograma de los goles como visintantes del Betis, ayudan a tener un mayor registro de goles.Este gráfico nos ayuda a saber que en sus visistas anotó mayormente igual a 2,5 goles por partido. En sus visitas muy pocas veces anotó 3,5 goles o más.   gráfico</div>", unsafe_allow_html=True)
+        st.image("grafico3.png", caption='Histograma de los goles de visita del Betis', width=500)
         pass
-    elif grafico_seleccionado == 'mapa cusco':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'mapa películas favoritas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Se escogió mis 5 películas favoritas de diferentes géneros. Estas películas son nominadas a muchos premios y entrere ellos los Oscar. El mapa ayuda a una myor interacción de donde se filmaron estas películas. mapa</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
-        with open("mapa_cusco.html", "r", encoding="utf-8") as f:
+        with open("mapa_peliculas.html", "r", encoding="utf-8") as f:
             html_content = f.read()
         components.html(html_content, height=500)
         pass
