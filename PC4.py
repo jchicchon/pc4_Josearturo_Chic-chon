@@ -172,7 +172,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de barras verticales de partidos del Betis ', 'Gráfico de torta de los partidos de local  del Betis', 'Histograma de los goles de visita del Betis', 'mapa películas favoritas']
+    graficos = ['Gráfico de barras verticales de partidos del Betis', 'Gráfico de torta de los partidos de local del Betis', 'Histograma de los goles anotados del Betis como visitante', 'mapa películas favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
