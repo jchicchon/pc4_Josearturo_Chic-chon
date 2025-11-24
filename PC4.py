@@ -190,7 +190,7 @@ else:
         st.markdown("<div style='text-align: justify; font-size: 20px;'> Análisis de los partidos de futbol del Betis en la Liga Española. Estos partidos muestran las doferencias del Betis jugando de local como visitante. Se muestra una diferencia en los partidos de local, ya que tiene más victorias. gráfico</div>", unsafe_allow_html=True)
         st.image("grafico1.png", caption='Gráfico de los partidos de local y visitante del Betis', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de torta de los partidos de local  del Betis':
+    elif grafico_seleccionado == 'Gráfico de torta de los partidos de local del Betis':
         st.markdown("<div style='text-align: justify; font-size: 20px;'> Se muestra un gráfico de torta sobre los partidos de local del Betis en la Liga Española. En este tipo de gráficos se puede apreciar los porcentajes de las victorias, empates y derrotas. Este gráfico ayuda a una mayor interacción y comprensión de los partidos jugados como local del Betis. gráfico</div>", unsafe_allow_html=True)
         st.image("imagen2.png", caption='Gráfico de torta de los partidos de local del Betis',width=500)
         pass
