@@ -1,2 +1,2 @@
 # pc4_Josearturo_Chic-chon
-blog
+https://josearturo-blog.streamlit.app/
